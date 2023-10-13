@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    
+</head>
+<body id="bodyTest">
+
+<h1>Ежедневник</h1>
+
+<h2>
+    <select class = "monthChose" id="monchose">
+        <option id = "m0" dataMonth="1">Январь</option>
+        <option id = "m1" dataMonth="2">Ферваль</option>
+        <option id = "m2" dataMonth="3">Март</option>
+        <option id = "m3" dataMonth="4">Апрель</option>
+        <option id = "m4" dataMonth="5">Май</option>
+        <option id = "m5" dataMonth="6">Июнь</option>
+        <option id = "m6" dataMonth="7">Июль</option>
+        <option id = "m7" dataMonth="8">Август</option>
+        <option id = "m8" dataMonth="9">Сентябрь</option>
+        <option id = "m9" dataMonth="10">Октябрь</option>
+        <option id = "m10" dataMonth="11">Ноябрь</option>
+        <option id = "m11" dataMonth="12">Декабрь</option>
+    </select>
+
+    <select class = "yearChose" id="ych">
+        <option id = "y1">2021</option>
+        <option id = "y2">2022</option>
+        <option id = "y3">2023</option>
+        <option id = "y4">2024</option>
+        <option id = "y5">2025</option>
+    </select>
+</h2>
+
+<h3>
+    <div>
+        <button class="head0" id = "buttonWeek1" type="button">
+            пред.нед.
+        </button>
+
+        <div class="head0" id="inputWeek1"></div>
+        <div class="head0"> - </div>
+        <div class="head0" id="inputWeek2"></div>
+
+        <button class="head0" id = "buttonWeek2" type="button">
+            след.нед.
+        </button>
+    </div>
+</h3>
+    <table width = "100%" border="0" bordercolor="blue" id="tbl11">
+        <tr class = "tableHeader" align="center" valign="top">
+            <td> </td>
+            <td>
+                <div class = "head1">Пн</div>
+                <div class = "head1" id = "monDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "monMonth">
+                    пывпвы
+                </div>
+            </td>
+            <td>
+                <div class = "head1">Вт</div>
+                <div class = "head1" id = "tueDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "tueMonth">
+                    пывпвы
+                </div>
+            </td>
+            <td>
+                <div class = "head1">Ср</div>
+                <div class = "head1" id = "wedDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "wedMonth">
+                    пывпвы
+                </div>
+            </td>
+            <td>
+                <div class = "head1">Чт</div>
+                <div class = "head1" id = "thuDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "thuMonth">
+                    пывпвы
+                </div>
+            </td>
+            <td>
+                <div class = "head1">Пт</div>
+                <div class = "head1" id = "friDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "friMonth">
+                    пывпвы
+                </div>
+            </td>
+            <td>
+                <div class = "head1">Сб</div>
+                <div class = "head1" id = "satDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "satMonth">
+                    пывпвы
+                </div>
+            </td>
+            <td>
+                <div class = "head1">Вс</div>
+                <div class = "head1" id = "sunDate">
+                    пвыпвы
+                </div>
+                <div class = "head1" id = "sunMonth">
+                    пывпвы
+                </div>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">8:00 <br> 8:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but1"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but2"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but3"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but4"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but5"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but6"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but7"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">9:00 <br> 9:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but8"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but9"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but10"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but11"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but12"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but13"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but14"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">10:00 <br> 10:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but15"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but16"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but17"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but18"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but19"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but20"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but21"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">11:00 <br> 11:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but22"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but23"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but24"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but25"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but26"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but27"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but28"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">12:00 <br> 12:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but29"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but30"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but31"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but32"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but33"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but34"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but35"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">13:00 <br> 13:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but36"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but37"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but38"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but39"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but40"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but41"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but42"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">14:00 <br> 14:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but43"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but44"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but45"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but46"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but47"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but48"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but49"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">15:00 <br> 15:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but50"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but51"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but52"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but53"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but54"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but55"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but56"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">16:00 <br> 16:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but57"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but59"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but59"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but60"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but61"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but62"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but63"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">17:00 <br> 17:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but64"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but65"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but66"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but67"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but68"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but69"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but70"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">18:00 <br> 18:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but71"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but72"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but73"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but74"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but75"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but76"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but77"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">19:00 <br> 19:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but78"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but79"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but80"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but81"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but82"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but83"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but84"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">20:00 <br> 20:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but85"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but86"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but87"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but88"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but89"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but90"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but91"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">21:00 <br> 21:30</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but92"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but93"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but94"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but95"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but96"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but97"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but98"></button>
+                </form>
+            </td>
+        </tr>
+        <tr valign="center" bordercolor="blue">
+            <td align="center" class="time1">22:00</td>
+
+            <td align="center">
+                <form id="text11">
+                    <button class="button1" type="button" id = "but99"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but100"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but101"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but102"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but103"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but104"></button>
+                </form>
+            </td>
+
+            <td align="center">
+                <form>
+                    <button class="button1" type="button" id = "but105"></button>
+                </form>
+            </td>
+        </tr>
+  </table>
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"/>  
+</body>
+<footer>
+</footer>
+</html>
